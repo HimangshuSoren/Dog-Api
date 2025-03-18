@@ -32,13 +32,13 @@ function Dog() {
     return (
         <>
             <div className='min-h-screen max-h-screen min-w-full relative'>
-                <div className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] h-auto shadow-[0px_5px_15px_rgba(0,0,0,0.25)] rounded-2xl transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute flex flex-col items-center justify-between p-3 sm:p-4 md:p-5">
-                    <div className="w-full aspect-square sm:aspect-[4/3] md:aspect-[16/9] lg:aspect-[2/1] mb-4">
+                <div className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] h-[70vh] shadow-[0px_5px_15px_rgba(0,0,0,0.25)] rounded-2xl transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute flex flex-col items-center justify-between p-3 sm:p-4 md:p-5">
+                    <div className="w-full h-[calc(100%-4rem)] mb-4">
                         <img 
                             ref={imageRef} 
                             src={dogImageUrl} 
                             alt="Dog Image" 
-                            className="w-full h-full object-contain rounded-lg"
+                            className="w-full h-full object-contain rounded-lg" 
                         />
                     </div>
                     <button 
